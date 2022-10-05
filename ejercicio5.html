@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/modal.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>Ejercicio5</title>
+</head>
+<body>
+    <div class="title">
+        <h3>CALCULA LAS FIGURAS</h3>
+    </div>
+    <div class="padre">
+    <div class="circulo">
+        <h3>Circulo</h3>
+        <a href="#" class="carea btn btn-light">Calcular Área</a>
+        <a href="#" class="cperi btn btn-light">Calcular Perimetro</a>
+    </div>
+    <section class="modall">
+        <form action="" class="contenedor">
+            <h3  class="titulo_mc">Calcular el area del circulo</h3>
+            <label for="" class="texto">Ingrese el valor a calcular</label>
+            <input type="number" name="" id="valorarea">
+            <button type="submit" class="btn-dark" onclick="carea()">Calcular</button>
+            <a href="#" class="cerrarm ">Cerrar Modal</a>
+        </form>
+    </section>
+    <section class="modalpc">
+        <form action="" class="contenedorpc">
+            <h3  class="titulo_pc">Calcular el perimetro del circulo</h3>
+            <label for="" class="textopc">Ingrese el valor a calcular</label>
+            <input type="number" name="" id="valorperi">
+            <button type="submit" class="btn-dark" onclick="crperi()">Calcular</button>
+            <a href="#" class="cerrarpc">Cerrar Modal</a>
+        </form>
+    </section><br>
+    <div class="cuadrado">
+        <h3>CUADRADO</h3>
+        <a href="#" class="cdarea btn btn-light">Calcular Área</a>
+        <a href="#" class="cdperi btn btn-light">Calcular Perimetro</a>
+    </div>
+    <section class="modalcd">
+        <form action="" class="contenedorcd">
+            <h3  class="titulo_cd">Calcular el area del cuadrado</h3>
+            <label for="" class="textocd">Ingrese el valor a calcular</label>
+            <input type="number" name="" id="valorareacd">
+            <button type="submit" onclick="cdarea()">Calcular</button>
+            <a href="#" class="cerrarcd">Cerrar Modal</a>
+        </form>
+    </section>
+    <section class="modalcdp">
+        <form action="" class="contenedorcdp">
+            <h3  class="titulo_cdp">Calcular el perimetro del cuadrado</h3>
+            <label for="" class="textocdp">Ingrese el valor a calcular</label>
+            <input type="number" name="" id="valorpericd">
+            <button type="submit" onclick="cdperi()">Calcular</button>
+            <a href="#" class="cerrarcdp">Cerrar Modal</a>
+        </form>
+    </section><br>
+    <div class="tri">
+        <h3>TRIANGULO</h3>
+        <a href="#" class="areatr btn btn-light">Calcular Área</a>
+        <a href="#" class="peritr btn btn-light">Calcular Perimetro</a>
+    </div>
+    <section class="modaltr">
+        <form action="" class="contenedortr">
+            <h3  class="titulo_tr">Calcular el area del triángulo</h3>
+            <label for="" class="textorec">Ingrese la base del triangulo</label>
+            <input type="number" name="" id="basetr">
+            <label for="" class="textorec">Ingrese la altura del troangulo</label>
+            <input type="number" name="" id="alttr">
+            <button type="submit" onclick="areatr()">Calcular</button>
+            <a href="#" class="cerrartr">Cerrar Modal</a>
+        </form>
+    </section>
+    <section class="modalttr">
+        <form action="" class="contenedorttr">
+            <h3  class="titulo_ttr">Calcular el perimetro del triangulo</h3>
+            <label for="" class="textottr">Ingrese el primer lado del triangulo</label>
+            <input type="number" name="" id="1">
+            <label for="" class="textottr">Ingrese el segundo lado del triangulo</label>
+            <input type="number" name="" id="2">
+            <label for="" class="textottr">Ingrese el tercer lado del triangulo</label>
+            <input type="number" name="" id="3">
+            <button type="submit" onclick="peritr()">Calcular perimetro</button>
+            <a href="#" class="cerrarttr">Cerrar Modal</a>
+        </form>
+    </section><br>
+    <div class="rec">
+        <h3>RECÁNGULO</h3>
+        <a href="#" class="crec btn btn-light">Calcular Área</a>
+        <a href="#" class="prec btn btn-light">Calcular Perimetro</a>
+    </div>
+    <section class="modalrec">
+        <form action="" class="contenedorrec">
+            <h3  class="titulo_rec">Calcular el area del rectángulo</h3>
+            <label for="" class="textorec">Ingrese el largo del rectangulo</label>
+            <input type="number" name="" id="largo">
+            <label for="" class="textorec">Ingrese el ancho del rectangulo</label>
+            <input type="number" name="" id="ancho">
+            <button type="submit" onclick="arearec()">Calcular</button>
+            <a href="#" class="cerrarrec">Cerrar Modal</a>
+        </form>
+    </section>
+    <section class="modalrep">
+        <form action="" class="contenedorrep">
+            <h3  class="titulo_rep">Calcular el oerimetro del cuadrado</h3>
+            <label for="" class="textorep">Ingrese el valor 1</label>
+            <input type="number" name="" id="la1">
+            <label for="" class="textorec">Ingrese el lado 2</label>
+            <input type="number" name="" id="la2">
+            <label for="" class="textorec">Ingrese el lado 3</label>
+            <input type="number" name="" id="la3">
+            <label for="" class="textorec">Ingrese el lado 4</label>
+            <input type="number" name="" id="la4">
+            <button type="submit" onclick="recperi()">Calcular</button>
+            <a href="#" class="cerrarrep">Cerrar Modal</a>
+        </form>
+    </div>
+    <div><a href="index.html"><button class="reg btn btn-dark"><h6>Volver</h6></button></a></div>
+    </section>
+    <!-- <section class="modal ">
+        <div class="modal__container">
+            <h2 class="titulo_mc">¡Bienvenido al sitio!</h2>
+            <p class="modal__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nobis nisi quibusdam doloremque expedita quae ipsam accusamus quisquam quas, culpa tempora. Veniam consectetur deleniti maxime.</p>
+            <a href="#" class="cerrarm">Cerrar Modal</a>
+        </div>
+    </section> -->
+    <script src="js/ejercicio5.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicia sesion</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <section id="teams" class="sectionf teams">
+  <div class="containerf">
+    <div class="section-header">
+              <h2 class="wow fadeInDown animated">Inicia Sesión</h2>
+              <p class="wow fadeInDown animated">Inicia sesión con nosotros para obtener mas beneficios</p>
+          </div>
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2 conFormf">       
+      <div id="message"></div>
+      <form method="post" action="php/contact.php" name="cform" id="cform">
+        <input name="name" id="name" type="text" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Tu nombre..." >
+        <input name="password" id="password" type="password" class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 noMarr" placeholder="Tu contraseña..." >
+        <p id="parrafo"></p>
+        <buttom type="submit" id="submit" name="send" class="submitBnt" value="Inicia sesión" onclick="validacion()">Enviar</buttom>
+        <div id="simple-msg"></div>
+      </form>
+    </div>
+  </div>
+</div>
+</section> 
+
+<button class="back-to-top"> <a href="index.html"> Inicio </a></button>
+<script src="js/login.js"></script>
+</body>
+</html>

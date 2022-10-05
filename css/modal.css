@@ -1,0 +1,558 @@
+/*PAGINA*/
+body{
+    background-image: url("../img/ff.jpg");
+}
+.title{
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 3%;
+    border-radius: 10px;
+    color: #D0D3D4;
+}
+.padre{
+    background-color: black;
+    padding: 35px;
+    border-radius: 10px;
+    text-align: center;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 4%;
+}
+.circulo{
+    border-radius: 10px;
+    background-color: #3278ea;
+    padding: 8px;
+}
+.cuadrado{
+    border-radius: 10px;
+    background-color: #3278ea;
+    padding: 8px;
+}
+.tri{
+    border-radius: 10px;
+    background-color: #3278ea;
+    padding: 8px;
+}
+.rec{
+    border-radius: 10px;
+    background-color: #3278ea;
+    padding: 8px;
+}
+.reg{
+    margin-left: 20%;
+    margin-top: 2%;
+}
+/*MODALES*/
+.modall{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s .9s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+}
+
+.modal--show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+    --transition: transform .8s .8s;
+}
+
+.contenedor{
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+    transform: var(--transform);
+    transition:var(--transition);
+}
+
+.titulo_mc{
+    font-size: 2.5rem;
+}
+
+.texto{
+    margin-bottom: 10px;
+}
+
+.cerrarm{
+    text-decoration: none;
+    color: #fff;
+    background-color: #3278ea;
+    padding: 1em 3em;
+    border: 1px solid ;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 300;
+    transition: background-color .3s;
+}
+
+.cerrarm:hover{
+    color: #3278ea;
+    background-color: #fff;
+}
+/*MODAL PERIMETRO CIRCULO*/
+.modalpc{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s .9s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+}
+
+.modal--show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+    --transition: transform .8s .8s;
+}
+
+.contenedorpc{
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+    transform: var(--transform);
+    transition:var(--transition);
+}
+
+.titulo_pc{
+    font-size: 2.5rem;
+}
+
+.textopc{
+    margin-bottom: 10px;
+}
+
+.cerrarpc{
+    text-decoration: none;
+    color: #fff;
+    background-color: #3278ea;
+    padding: 1em 3em;
+    border: 1px solid ;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 300;
+    transition: background-color .3s;
+}
+
+.cerrarpc:hover{
+    color: #3278ea;
+    background-color: #fff;
+}
+/*MODAL AREA CUADRADO*/
+.modalcd{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s .9s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+}
+
+.modal--show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+    --transition: transform .8s .8s;
+}
+
+.contenedorcd{
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+    transform: var(--transform);
+    transition:var(--transition);
+}
+
+.titulo_cd{
+    font-size: 2.5rem;
+}
+
+.textocd{
+    margin-bottom: 10px;
+}
+
+.cerrarcd{
+    text-decoration: none;
+    color: #fff;
+    background-color: #3278ea;
+    padding: 1em 3em;
+    border: 1px solid ;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 300;
+    transition: background-color .3s;
+}
+
+.cerrarcd:hover{
+    color: #3278ea;
+    background-color: #fff;
+}/*MODAL PERIMETRO CUADRADO*/
+.modalcdp{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s .9s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+}
+
+.modal--show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+    --transition: transform .8s .8s;
+}
+
+.contenedorcdp{
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+    transform: var(--transform);
+    transition:var(--transition);
+}
+
+.titulo_cdp{
+    font-size: 2.5rem;
+}
+
+.textocdp{
+    margin-bottom: 10px;
+}
+
+.cerrarcdp{
+    text-decoration: none;
+    color: #fff;
+    background-color: #3278ea;
+    padding: 1em 3em;
+    border: 1px solid ;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 300;
+    transition: background-color .3s;
+}
+
+.cerrarcdp:hover{
+    color: #3278ea;
+    background-color: #fff;
+}
+/*MODAL AREA TRIANGULO*/
+.modaltr{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s .9s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+}
+
+.modal--show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+    --transition: transform .8s .8s;
+}
+
+.contenedortr{
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+    transform: var(--transform);
+    transition:var(--transition);
+}
+
+.titulo_tr{
+    font-size: 2.5rem;
+}
+
+.textotr{
+    margin-bottom: 10px;
+}
+
+.cerrartr{
+    text-decoration: none;
+    color: #fff;
+    background-color: #3278ea;
+    padding: 1em 3em;
+    border: 1px solid ;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 300;
+    transition: background-color .3s;
+}
+
+.cerrartr:hover{
+    color: #3278ea;
+    background-color: #fff;
+}
+/*MODAL PERIMETRO TRIANGULO*/
+.modalttr{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s .9s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+}
+
+.modal--show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+    --transition: transform .8s .8s;
+}
+
+.contenedorttr{
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+    transform: var(--transform);
+    transition:var(--transition);
+}
+
+.titulo_ttr{
+    font-size: 2.5rem;
+}
+
+.textottr{
+    margin-bottom: 10px;
+}
+
+.cerrarttr{
+    text-decoration: none;
+    color: #fff;
+    background-color: #3278ea;
+    padding: 1em 3em;
+    border: 1px solid ;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 300;
+    transition: background-color .3s;
+}
+
+.cerrarttr:hover{
+    color: #3278ea;
+    background-color: #fff;
+}   
+/*MODAL AREA RECTANGULO*/
+.modalrec{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s .9s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+}
+
+.modal--show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+    --transition: transform .8s .8s;
+}
+
+.contenedorrec{
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+    transform: var(--transform);
+    transition:var(--transition);
+}
+
+.titulo_rec{
+    font-size: 2.5rem;
+}
+
+.textorec{
+    margin-bottom: 10px;
+}
+
+.cerrarrec{
+    text-decoration: none;
+    color: #fff;
+    background-color: #3278ea;
+    padding: 1em 3em;
+    border: 1px solid ;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 300;
+    transition: background-color .3s;
+}
+
+.cerrarrec:hover{
+    color: #3278ea;
+    background-color: #fff;
+}   
+/*MODAL PERIMETRO RECTANGULO*/
+.modalrep{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s .9s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+}
+
+.modal--show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+    --transition: transform .8s .8s;
+}
+
+.contenedorrep{
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+    transform: var(--transform);
+    transition:var(--transition);
+}
+
+.titulo_rep{
+    font-size: 2.5rem;
+}
+
+.textorep{
+    margin-bottom: 10px;
+}
+
+.cerrarrep{
+    text-decoration: none;
+    color: #fff;
+    background-color: #3278ea;
+    padding: 1em 3em;
+    border: 1px solid ;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 300;
+    transition: background-color .3s;
+}
+
+.cerrarrep:hover{
+    color: #3278ea;
+    background-color: #fff;
+}   
