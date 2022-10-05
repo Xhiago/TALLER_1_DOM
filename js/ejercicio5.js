@@ -14,7 +14,7 @@ function carea(){
     const operacion = valor*valor*3.14;
     alert("El área del circulo es = "+operacion)
 }
-/*MODAL PERIMTETRO*/
+/*MODAL PERIMTETRO CIRCULO*/
 const abrirp = document.querySelector('.cperi')
 const modalpc = document.querySelector('.modalpc')
 const cModalpc = document.querySelector('.cerrarpc')
@@ -26,7 +26,7 @@ abrirp.addEventListener('click', ()=>{
 cModalpc.addEventListener('click', ()=>{
     modalpc.classList.remove('modal--show');
 });
-/* CALCULAR PERIMETRO */
+/* CALCULAR PERIMETRO CIRCULO */
 function crperi(){
     const valorp = document.getElementById("valorperi").value
     const operacion = 2*3.14*valorp;
@@ -44,7 +44,7 @@ abrircd.addEventListener('click', ()=>{
 cModalcd.addEventListener('click', ()=>{
     modalcd.classList.remove('modal--show');
 });
-/* CALCULAR AREA */
+/* CALCULAR AREA CUADRADO*/
 function cdarea(){
     const valorcd = document.getElementById("valorareacd").value
     const operacion = valorcd*valorcd;
@@ -62,7 +62,7 @@ abrircdp.addEventListener('click', ()=>{
 cModalcdp.addEventListener('click', ()=>{
     modalcdp.classList.remove('modal--show');
 });
-/* CALCULAR PERIMETRO */
+/* CALCULAR PERIMETRO CUADRADO*/
 function cdperi(){
     const valorcdp = document.getElementById("valorpericd").value
     const operacion = valorcdp*4;
@@ -80,7 +80,7 @@ abrirtr.addEventListener('click', ()=>{
 cModaltr.addEventListener('click', ()=>{
     modaltr.classList.remove('modal--show');
 });
-/* CALCULAR AREA */
+/* CALCULAR AREA TRIANGULO*/
 function areatr(){
     const base = document.getElementById("basetr").value
     const altura = document.getElementById("alttr").value
@@ -99,7 +99,7 @@ abrirttr.addEventListener('click', ()=>{
 cModalttr.addEventListener('click', ()=>{
     modalttr.classList.remove('modal--show');
 });
-/* CALCULAR PERIEMTRO TRIANGULO */
+/* CALCULAR PERIMETRO TRIANGULO */
 function peritr(){
     const lado1 = document.getElementById("1").value
     const lado2 = document.getElementById("2").value
@@ -119,7 +119,7 @@ abrirrec.addEventListener('click', ()=>{
 cModalrec.addEventListener('click', ()=>{
     modalrec.classList.remove('modal--show');
 });
-/* CALCULAR AREA */
+/* CALCULAR AREA RECTANGULO*/
 function arearec(){
     const largor = document.getElementById("largo").value
     const anchor = document.getElementById("ancho").value
@@ -138,12 +138,12 @@ abrirrep.addEventListener('click', ()=>{
 cModalrep.addEventListener('click', ()=>{
     modalrep.classList.remove('modal--show');
 });
-/* CALCULAR AREA */
+/* CALCULAR PERIMETRO */
 function recperi(){
     const laado1 = document.getElementById("la1").value
     const laado2 = document.getElementById("la2").value
     const laado3 = document.getElementById("la3").value
     const laado4 = document.getElementById("la4").value
     const operacion = laado1+laado2+laado3+laado4;
-    alert("El área del rectangulo es = "+operacion)
+    alert("El perimetro del rectangulo es = "+operacion)
 }
