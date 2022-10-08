@@ -1,0 +1,47 @@
+body{
+    background-image: url("../img/fa.jpg");
+}
+.title{
+    background-color: #063659;
+    text-align: center;
+    padding: 10px;
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 5%;
+    border-radius: 10px;
+    color: white;
+}
+.card{
+    text-align: center;
+}
+.texto{
+    background-color: #063659;
+    text-align: center;
+    padding: 10px;
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 5%;
+    border-radius: 10px;
+    color: white  ;
+}
+.carint{
+    width: 150px;
+}
+.c1{
+    margin-left: 30%;
+    margin-top: 8%;
+}
+.c2{
+    margin-left: 60%;
+    margin-top: -4.6%;
+}
+.card{
+    background-color: #390387;
+}
+.card-body{
+    background-color: #390387;
+}
+.reg{
+    margin-left: 30%;
+    margin-top: 5%;
+}
